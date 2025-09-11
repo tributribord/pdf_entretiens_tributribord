@@ -1,48 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>PDF Entretiens Tributribord</title>
+  <meta charset="UTF-8" />
+  <title>Fiches d'entretien - Tributribord</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 950px;
+      margin: 32px auto;
+      padding: 0 16px;
+      line-height: 1.5;
+      color: #111;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+    ul.fiches {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    @media(min-width:700px){
+      ul.fiches { grid-template-columns: 1fr 1fr; }
+    }
+    li.fiche {
+      background: #f8f9fb;
+      border: 1px solid #e6e9ee;
+      padding: 10px 12px;
+      border-radius: 8px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .icon { font-size: 1.2rem; }
+    a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      flex: 1;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
   <h1>Fiches d'entretien</h1>
-  <ul>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Contr%C3%B4le%20de%20la%20pression%20des%20boudins.pdf" target="_blank">
-      <strong>Fiche d'entretien - Contrôle de la pression des boudins</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Entretien%20du%20circuit%20d'eaux%20us%C3%A9es.pdf" target="_blank">
-      <strong>Fiche d'entretien - Entretien du circuit d'eaux usées</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Inspection%2C%20rin%C3%A7age%20et%20stockage%20des%20voiles.pdf" target="_blank">
-      <strong>Fiche d'entretien - Inspection, rinçage et stockage des voiles</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Nettoyage%20du%20filtre%20%C3%A0%20air.pdf" target="_blank">
-      <strong>Fiche d'entretien - Nettoyage du filtre à air</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Polissage%20de%20la%20coque.pdf" target="_blank">
-      <strong>Fiche d'entretien - Polissage de la coque</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Remplacement%20courroie%20de%20distribution.pdf" target="_blank">
-      <strong>Fiche d'entretien - Remplacement courroie de distribution</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Remplacement%20de%20la%20turbine%20de%20pompe%20%C3%A0%20eau.pdf" target="_blank">
-      <strong>Fiche d'entretien - Remplacement de la turbine de pompe à eau</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Remplacement%20des%20filtres%20%C3%A0%20carburant.pdf" target="_blank">
-      <strong>Fiche d'entretien - Remplacement des filtres à carburant</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20VERIFICATION%20DU%20NIVEAU%20D'HUILE%20MOTEUR.pdf" target="_blank">
-      <strong>Fiche d'entretien - Vérification du niveau d'huile moteur</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20Vidange%20de%20l'huile%20d'embase.pdf" target="_blank">
-      <strong>Fiche d'entretien - Vidange de l'huile d'embase</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20V%C3%A9rification%20de%20la%20direction.pdf" target="_blank">
-      <strong>Fiche d'entretien - Vérification de la direction</strong>
-    </a></li>
-    <li>📄 <a href="pdfs/FICHE%20ENTRETIEN%20-%20V%C3%A9rification%20du%20circuit%20%C3%A9lectrique%20%28cosses%2C%20feux%29.pdf" target="_blank">
-      <strong>Fiche d'entretien - Vérification du circuit électrique</strong>
-    </a></li>
+
+  <ul class="fiches">
+    <li class="fiche"><span class="icon">📄</span><a href="">Inspection de la coque, de l'hélice et des appendices</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Contrôle visuel de la cale</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vérification du niveau d'huile moteur</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vérification du niveau de liquide de refroidissement</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Observation rapide du moteur et de ses périphériques</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vérification de l'équipement de sécurité obligatoire</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Test du coupe-circuit et contrôle de la tension batterie</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Test manuel des pompes de cale</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vérification de la direction (fluidité, câbles, hydraulique)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Contrôle du bon fonctionnement du système de navigation</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Rinçage du moteur à l’eau douce</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Rinçage complet du bateau à l'eau douce</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Nettoyage du cockpit et de l'intérieur de la cabine</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Coupure générale du coupe-circuit batterie</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Aération des coffres et cabine</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Contrôle visuel des anodes sacrificielles</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Inspection des courroies (tension, craquelures)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Inspection des durites de carburant et de refroidissement</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Graissage des points mobiles du moteur</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vérification du circuit électrique (cosses, feux)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Contrôle et resserrage de la visserie générale</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Graissage des parties mobiles (winchs, charnières)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Contrôle de la pression des boudins</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Nettoyage des boudins</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vérification visuelle des valves de surpression</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vidange de l'huile moteur</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Remplacement du filtre à huile</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vidange de l'huile d'embase</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Remplacement des filtres à carburant</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Vérification et/ou remplacement des bougies d'allumage</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Remplacement de la turbine (rotor) de pompe à eau</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Nettoyage du circuit de refroidissement (calorstat, échangeur)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Nettoyage du carburateur ou contrôle des injecteurs</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Nettoyage du filtre à air</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Inspection complète du circuit de carburant et d’échappement</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Hivernage du moteur (stabilisant, antigel, protection)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Carénage (nettoyage haute pression et antifouling)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Inspection détaillée de la coque et des appendices</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Polissage de la coque</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Nettoyage et vidange des réservoirs (eau, carburant)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Entretien du circuit d'eaux usées</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Contrôle et nettoyage complet du gréement</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Inspection, rinçage et stockage des voiles</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Entretien complet de la remorque (roulements, pneus, freins, feux)</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Remplacement de la courroie de distribution</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Révision complète du démarreur et de l'alternateur</a></li>
+    <li class="fiche"><span class="icon">📄</span><a href="">Nettoyage en profondeur de l'échangeur thermique</a></li>
   </ul>
 </body>
 </html>
